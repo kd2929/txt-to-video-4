@@ -27,19 +27,19 @@ bot = Client("bot",
              api_hash= "cb3f118ce5553dc140127647edcf3720")
 
 
-@bot.on_message(filters.command(["istart"]))
+@bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**𝙷𝚒!** 𝐈❜𝐦 𝐓𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 \n\n𝙶𝚒𝚟𝚎 𝐇𝐢𝐝𝐝𝐞𝐧 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝚝𝚘 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙵𝚛𝚘𝚖 𝚊 𝚃𝚎𝚡𝚝 𝚏𝚒𝚕𝚎.🎓✨")
 
 
-@bot.on_message(filters.command("rokdemittr"))
+@bot.on_message(filters.command("deagon"))
 async def restart_handler(_, m):
-    await m.reply_text("**RokDiyaMittr**🚦", True)
+    await m.reply_text("**dragon**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["only4"]))
+@bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('**SEND TXT FILE 🗃️ OR LINKS TO DOWNLOAD 🔗**')
     input: Message = await bot.listen(editable.chat.id)
